@@ -23,10 +23,21 @@ void Board::setBoard()
 
 void Board::displayBoard()
 {
-	
-	
+	cout.width(4);
+
+	for (int i = 1; i < size + 1; i++)
+	{
+		cout << i;
+		cout.width(2);
+	}
+	cout << endl;
+	int counter = 1;
+
 	for (auto t1 : fields)
 	{
+		cout.width(2);
+		cout << counter++;
+
 		for (auto t2 : t1)
 		{
 			if (t2.getOpen())

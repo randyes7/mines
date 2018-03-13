@@ -6,9 +6,6 @@ int main()
 {
 	srand((unsigned int)time(NULL));
 
-	// random comment
-	// also random comment
-
 	Game game;
 	game.play();
 
