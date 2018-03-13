@@ -6,7 +6,6 @@ int main()
 {
 	srand((unsigned int)time(NULL));
 	
-
 	Game game;
 	game.play();
 
