@@ -5,8 +5,8 @@
 int main()
 {
 	srand((unsigned int)time(NULL));
-	
 
+	// random comment
 
 	Game game;
 	game.play();
