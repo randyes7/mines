@@ -31,6 +31,7 @@ void Board::displayBoard()
 		cout.width(2);
 	}
 	cout << endl;
+
 	int counter = 1;
 
 	for (auto t1 : fields)
