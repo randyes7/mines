@@ -39,7 +39,7 @@ public:
 	void setBoard();
 	void setNumbers();
 	void openMulti(vector<int> positions);
-	void Board::checkBorders(vector<int> positions);
+	void Board::openFields(vector<int> positions);
 
 	void displayBoard();
 	void displayFinalBoard();

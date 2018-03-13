@@ -76,7 +76,7 @@ void Board::displayFinalBoard()
 	}
 }
 
-void Board::checkBorders(vector<int> pos)
+void Board::openFields(vector<int> pos)
 {	
 	if ((pos[0] < 0 || pos[0] > size - 1))
 		return;
@@ -104,14 +104,14 @@ void Board::checkBorders(vector<int> pos)
 
 void Board::openMulti(vector<int> pos)
 {
-	checkBorders({ pos[0] + 1, pos[1] + 1});
-	checkBorders({ pos[0] + 1, pos[1] });
-	checkBorders({ pos[0] + 1, pos[1] - 1});
-	checkBorders({ pos[0], pos[1] + 1});
-	checkBorders({ pos[0], pos[1] - 1});
-	checkBorders({ pos[0] - 1, pos[1] + 1});
-	checkBorders({ pos[0] - 1, pos[1] });
-	checkBorders({ pos[0] - 1, pos[1] - 1});
+	openFields({ pos[0] + 1, pos[1] + 1});
+	openFields({ pos[0] + 1, pos[1] });
+	openFields({ pos[0] + 1, pos[1] - 1});
+	openFields({ pos[0], pos[1] + 1});
+	openFields({ pos[0], pos[1] - 1});
+	openFields({ pos[0] - 1, pos[1] + 1});
+	openFields({ pos[0] - 1, pos[1] });
+	openFields({ pos[0] - 1, pos[1] - 1});
 }
 
 
